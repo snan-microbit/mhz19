@@ -50,7 +50,7 @@ namespace CO2 {
         }
     }
 
-    //% blockId=medirco2ppmuart block="Co2 PPM PWM"
+    //% blockId=medirco2ppmuart block="CO2 PWM"
     export function get_co2_pwm(): number {
         //Espera flanco de subida
         esperarSubida();
@@ -80,7 +80,7 @@ namespace CO2 {
         serial.redirectToUSB()
     }
 
-    //% blockId=medir co2 ppm uart block="Co2 PPM UART"
+    //% blockId=medir co2 ppm uart block="CO2 UART"
     export function get_c02_uart() {
         serial.redirect(_rxPin, _txPin, 9600);
         serial.writeBuffer(_comandCo2);
